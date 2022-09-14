@@ -56,8 +56,9 @@ public class SecondFragment extends Fragment {
     }
 
     public void navigate() {
-        Intent i = new Intent(this.getContext(), ActivityWeb.class);
-        i.putExtra("url", txt_search.getText().toString());
+
+        Intent i= new Intent(this.getContext(), ActivityWeb.class);
+        i.putExtra("url",txt_search.getText().toString());
         startActivity(i);
     }
 
